@@ -1,0 +1,47 @@
+name: Actualizar perfil desde el portafolio
+
+# Lee el projects.json publico del portafolio y regenera README.md + svg/.
+# Solo guarda un commit si algo cambio (la salida de generar.py es determinista).
+on:
+  schedule:
+    - cron: "0 13 * * *"     # todos los dias 7:00 am hora de Cd. Guzman (UTC-6)
+  workflow_dispatch:          # boton "Run workflow" para correrlo a mano
+  push:
+    branches: [main]
+    paths: ["generar.py", "perfil.json", "plantilla.md", "fuentes/**"]
+
+permissions:
+  contents: write
+
+concurrency:
+  group: actualizar-perfil
+  cancel-in-progress: false
+
+jobs:
+  actualizar:
+    runs-on: ubuntu-latest
+    timeout-minutes: 10
+    steps:
+      - uses: actions/checkout@v4
+
+      - uses: actions/setup-python@v5
+        with:
+          python-version: "3.12"
+
+      - name: Instalar dependencias
+        run: pip install fonttools==4.61.1
+
+      - name: Generar perfil
+        run: python generar.py
+
+      - name: Guardar si cambio
+        run: |
+          if [ -n "$(git status --porcelain)" ]; then
+            git config user.name "github-actions[bot]"
+            git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+            git add README.md svg
+            git commit -m "Perfil: actualizado desde el portafolio"
+            git push
+          else
+            echo "Sin cambios en el portafolio; no hay nada que guardar."
+          fi

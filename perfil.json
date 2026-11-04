@@ -1,0 +1,51 @@
+{
+  "nombre": "Juan Pablo Retana",
+  "rol": "Líder de Operaciones y Tecnología — Retail farmacéutico",
+  "lema": "Convierto la operación diaria de una cadena de farmacias en sistemas que deciden, avisan y miden.",
+  "ubicacion": "Cd. Guzmán, Jalisco · México",
+  "areas": ["Abasto e inventario", "CEDIS", "Punto de venta", "Capacitación", "Dirección"],
+  "sucursales": 17,
+  "cedis": 1,
+  "portafolio_url": "https://retana1885.github.io/proyectos2026/",
+  "datos_url": "https://retana1885.github.io/proyectos2026/data/projects.json",
+  "destacados": 8,
+  "stack_top": 12,
+
+  "presentacion": "Diseño, construyo y opero los sistemas internos de una cadena regional de farmacias en México: abasto e inventario, centro de distribución, integraciones con el punto de venta, capacitación del personal y reportes para Dirección. Trabajo con desarrollo asistido por IA: yo defino el problema y las reglas, y apruebo cada pantalla antes de que llegue a producción.",
+
+  "principios": [
+    ["Decisión, no predicción", "El resultado es «haz esto», con el porqué a la vista en segundos."],
+    ["Humano en el loop", "El sistema sugiere y calcula; la persona decide y aprueba."],
+    ["Local primero", "Todo se prueba en local; producción, con respaldo previo y verificación."],
+    ["Reglas en archivos", "Lo que cambia el negocio se ajusta en configuración, sin programar."],
+    ["El punto de venta es intocable", "Se lee, nunca se escribe; cada sistema tiene su propia base."],
+    ["Los datos sensibles no salen", "Personas y clientes nunca salen del entorno controlado."]
+  ],
+
+  "stack_reglas": [
+    ["^flask-sqlalchemy|^sqlalchemy", "SQLAlchemy"],
+    ["^python", "Python"],
+    ["^fastapi|^uvicorn", "FastAPI"],
+    ["^flask", "Flask"],
+    ["^sql server|^odbc driver|^pyodbc", "SQL Server"],
+    ["^sqlite", "SQLite"],
+    ["^postgre|^psycopg", "PostgreSQL"],
+    ["^pandas", "pandas"],
+    ["^openpyxl|^sheetjs|^xlsxwriter", "Excel (openpyxl)"],
+    ["^react", "React"],
+    ["^typescript", "TypeScript"],
+    ["^tailwind", "Tailwind CSS"],
+    ["^javascript", "JavaScript"],
+    ["^html|^css", "HTML · CSS"],
+    ["^tkinter|^ttk", "Tkinter"],
+    ["^pyinstaller", "PyInstaller"],
+    ["^playwright", "Playwright"],
+    ["^pytest", "pytest"],
+    ["^streamlit|^plotly", "Streamlit · Plotly"],
+    ["^systemd|^servidor linux|^ubuntu|^digitalocean|^nginx|^caddy|^gunicorn|^systemctl", "Linux en la nube"],
+    ["microsoft graph|teams|power bi|microsoft 365|m365|outlook|exchange", "Microsoft 365"],
+    ["ollama|\\bllm\\b|sentence-transformers|openai|claude|gemini", "IA / LLM"],
+    ["^pillow", "Pillow"],
+    ["^docker", "Docker"]
+  ]
+}

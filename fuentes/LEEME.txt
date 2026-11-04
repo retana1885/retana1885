@@ -1,0 +1,6 @@
+Fuentes de Google Fonts (licencia SIL Open Font License 1.1, uso y redistribucion permitidos):
+- Bebas Neue (Dharma Type)      -> BebasNeue-Regular.ttf
+- DM Mono (Colophon Foundry)    -> DMMono-Regular.ttf, DMMono-Medium.ttf
+Son las mismas del portafolio (retana1885.github.io/proyectos2026). generar.py las recorta
+a los caracteres usados y las incrusta dentro de cada SVG (las imagenes del README no pueden
+cargar fuentes externas).
