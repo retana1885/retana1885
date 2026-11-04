@@ -8,7 +8,7 @@
 </picture>
 </a>
 
-Diseño, construyo y opero los sistemas internos de una cadena regional de farmacias en México: abasto e inventario, centro de distribución, integraciones con el punto de venta, capacitación del personal y reportes para Dirección. Trabajo con desarrollo asistido por IA: yo defino el problema y las reglas, y apruebo cada pantalla antes de que llegue a producción.
+Ingeniero en Sistemas con diez años en retail: ocho en operación de campo (hasta 40 tiendas a cargo) y, desde 2025, al frente de sistemas y análisis de datos en una cadena de 17 farmacias con centro de distribución. Conozco la tienda por dentro y construyo las herramientas que la abastecen y la miden: opero e integro los procesos digitales del abasto (y diseñé los de conciliación de recepciones, desempeño de surtido y medición de proveedores), administro la infraestructura de TI y preparo el análisis comercial que usa la Dirección. Trabajo con desarrollo asistido por IA: defino el problema y las reglas, y apruebo cada pantalla antes de que llegue a producción.
 
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="svg/impacto-oscuro.svg">
